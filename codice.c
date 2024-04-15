@@ -66,7 +66,7 @@ int main(int argc, char **argv)
 	int num_dati = sizeof(dati_input) / sizeof(dati_input[0]);
 
 	estrai_dati(argc, argv, dati_input, &num_dati);
-	ordina_dati(int num_dati,dati_input, dati_ordinati);
+	ordina_dati(num_dati,dati_input, dati_ordinati);
 	stampa_vettore(dati_ordinati, num_dati);
 	return 0;
 }
