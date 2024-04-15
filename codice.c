@@ -41,7 +41,7 @@ void inserisci(int nuovo_dato, int num_dati_ord, int *vett)
 	}
 }
 
-void ordina_dati(const int *dati_non_ordinati, int *dati_ordinati)
+void ordina_dati(int num_dati, const int *dati_non_ordinati, int *dati_ordinati)
 {
 	
 	for (int i = 0; i < num_dati; ++i)
@@ -63,7 +63,7 @@ int main(int argc, char **argv)
 	}
 	int dati_input[MAX_INPUT] = {0};
 	int dati_ordinati[MAX_INPUT] = {0};
-	int num_dati = 0;
+	int num_dati = sizeof(dati_input) / sizeof(dati_input[0]);
 
 	estrai_dati(argc, argv, dati_input, &num_dati);
 	ordina_dati(dati_input, dati_ordinati);
