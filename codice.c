@@ -5,7 +5,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
 #define MAX_INPUT 10
 
 void estrai_dati(int ac, char **av, int *vett, int *lung)
